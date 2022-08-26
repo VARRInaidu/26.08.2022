@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[10];
+	gets(str);	
+	int i,up=0,down=0,num=0; 
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(isupper(str[i])) 
+		{
+			up++;
+		}
+   if(islower(str[i]))
+   {
+    down++;
+   }
+  if(isdigit(str[i]))
+   { 
+   num++;
+   }
+	}
+	printf("Upper char=%d\nLower char=%d\nDigits=%d",up,down,num);
+}
